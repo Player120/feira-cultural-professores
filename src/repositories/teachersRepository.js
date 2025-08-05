@@ -21,6 +21,13 @@ class TeachersRepository {
         console.log('findByRm::teacher:', teacher)
         return teacher
     }
+    async findByArea (area) {
+        await startConnection()
+        const teachers = await TeacherModel.find({ area })
+        await closeConnection()
+        console.log('findByArea::teacher:', teachers)
+        return teachers
+    }
 }
 
 module.exports = { TeachersRepository }

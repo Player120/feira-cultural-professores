@@ -13,6 +13,12 @@ class TeachersRepositoryInMemory {
         )
         return teacherFound
     }
+    findByArea (area) {
+        const teachersFound = teachersTable.filter(
+            teacher => teacher.area === area
+        )
+        return teachersFound
+    }    
 }
 
 module.exports = { TeachersRepositoryInMemory }
