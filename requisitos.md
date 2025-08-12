@@ -18,7 +18,9 @@
 
 # [X] Deve ser possível listar os professores cadastrados no sistema.
 
-# [] Deve ser possível listar os professores cadastrados no sistema por area.
+# [X] FCP-01: Deve ser possível listar os professores cadastrados no sistema por area.
+
+# [] Ao cadastrar um professor, a área deve ser sempre cadastrada com os caracteres em lower case.
 
 # [] Deve ser possível listar os professores cadastrados no sistema por disciplina.
 
