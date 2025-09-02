@@ -4,7 +4,7 @@ const teacherSchema = new Schema({
     rm: Number,
     nome: String,
     area: String,
-    disciplinas: Array,
+    disciplinas: [String],
     email: String,
     aceitaOrientar: { type: Boolean, default: false },
     aceitaAvaliar: { type: Boolean, default: false }
