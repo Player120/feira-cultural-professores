@@ -1,0 +1,239 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1749580899644
+  modified: 1749580899644
+  description: ""
+collection:
+  - url: http://localhost:3000/students
+    name: Cadastro de estudantes
+    meta:
+      id: req_27aa93cc8eb04c54a6a5a152e448ca98
+      created: 1742985832975
+      modified: 1742989066154
+      isPrivate: false
+      description: ""
+      sortKey: -1742985832976
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"rm": 123,
+        	"nome": "Ronaldinho Gaúcho",
+        	"curso": "MTEC Informática para Web",
+        	"serie": "3",
+        	"email": "r10@gmail.com"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/students
+    name: Lista de estudantes
+    meta:
+      id: req_cfa07863a4ec4e8abdb6eef843319bd5
+      created: 1742988089420
+      modified: 1742988129418
+      isPrivate: false
+      description: ""
+      sortKey: -1742988089420
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/teachers
+    name: Lista de Professores
+    meta:
+      id: req_7a000a1387c44f6fbeadd48aa5ef5b75
+      created: 1756811429355
+      modified: 1756811875423
+      isPrivate: false
+      description: ""
+      sortKey: -1756811429355
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/teachers
+    name: Cadastro de Professores
+    meta:
+      id: req_e859389ee00c4eed9a11d6818147b5a3
+      created: 1756811880445
+      modified: 1757416078319
+      isPrivate: false
+      description: ""
+      sortKey: -1756811880445
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"rm": 3,
+        	"nome": "Teste",
+        	"area": "HUMANAS",
+        	"disciplinas": ["história", "geografia", "sociologia"],
+        	"email": "teste@professor.com",
+        	"aceitaAvaliar": false,
+        	"aceitaOrientar": false
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.4.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/teachers/area/informática
+    name: Lista de Professores por Área
+    meta:
+      id: req_17d5c4334dd547a48eee7879fb975a5d
+      created: 1756811936089
+      modified: 1757415525667
+      isPrivate: false
+      description: ""
+      sortKey: -1749899759387.5
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/teachers/discipline/sw
+    name: Lista de Professores por Disciplina
+    meta:
+      id: req_337c5d3ea36a49e68b7bbfc3198bc91f
+      created: 1756812162009
+      modified: 1756812965817
+      isPrivate: false
+      description: ""
+      sortKey: -1746443924403.75
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/teachers/accept-evaluate/false
+    name: Lista de Professores por Aceitar Avaliar
+    meta:
+      id: req_d5c00365478248c0af32beabf1c44c08
+      created: 1756813694348
+      modified: 1757417348330
+      isPrivate: false
+      description: ""
+      sortKey: -1744716006911.875
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/teachers/accept-orientate/false
+    name: Lista de Professores por Aceitar Orientar
+    meta:
+      id: req_27499fa7573c4bc6af04a5656db12739
+      created: 1757414986228
+      modified: 1757417484824
+      isPrivate: false
+      description: ""
+      sortKey: -1743852048165.9375
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    scripts:
+      preRequest: ""
+      afterResponse: ""
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1749580905605
+    modified: 1749580905605
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1749580905478
+    modified: 1749580905478
+    isPrivate: false

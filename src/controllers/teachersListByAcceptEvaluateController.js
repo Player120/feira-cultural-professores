@@ -1,9 +1,9 @@
 const { repositoryFactory } = require('../repositories/factory')
 
 async function findByAcceptEvaluate (req, res) {
-    const { acceptEvaluate } = req.params
+    const { aceitaAvaliar } = req.params
     const repository = repositoryFactory()
-    const teachers = await repository.findByAcceptEvaluate(acceptEvaluate)
+    const teachers = await repository.findByAcceptEvaluate(aceitaAvaliar)
     return res.json(teachers)
 }
 

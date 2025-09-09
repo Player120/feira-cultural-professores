@@ -38,7 +38,14 @@ class TeachersRepository {
     }
     async findByAcceptEvaluate (aceitaAvaliar) {
         await startConnection()
-        const teachers = await TeacherModel.find( {aceitaAvaliar} )
+        const teachers = await TeacherModel.find( { aceitaAvaliar } )
+        await closeConnection()
+        return teachers
+    }
+
+    async findByAcceptOrientate(aceitaOrientar) {
+        await startConnection()
+        const teachers = await TeacherModel.find( { aceitaOrientar } )
         await closeConnection()
         return teachers
     }

@@ -2,6 +2,7 @@ const { repositoryFactory } = require('../repositories/factory')
 
 async function create (req, res) {
     const input = req.body
+    input.area = input.area.toLowerCase()
     const { rm, nome, area, disciplinas } = input
     const repository = repositoryFactory()
     console.log('input: ', input)
