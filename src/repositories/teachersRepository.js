@@ -44,9 +44,9 @@ class TeachersRepository {
     }
     async findByAcceptOrientate(aceitaOrientar) {
         await startConnection()
-        const teachers = await TeacherModel.find( { aceitaOrientar } )
+        const teacher = await TeacherModel.find( { aceitaOrientar } )
         await closeConnection()
-        return teachers
+        return teacher
     }
 }
 
