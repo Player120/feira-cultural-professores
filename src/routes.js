@@ -1,5 +1,6 @@
 const { Router } = require('express')
 const teachersListController = require('./controllers/teachersListController')
+const teachersListByRmController = require('./controllers/teacherListByRmController')
 const teachersListByAreaController = require('./controllers/teachersListByAreaController')
 const teachersListByDisciplineController = require('./controllers/teachersListByDisciplineController')
 const teachersListByAcceptEvaluate = require('./controllers/teachersListByAcceptEvaluateController')
@@ -9,6 +10,7 @@ const teachersCreateController = require('./controllers/teachersCreateController
 const router = Router()
 
 router.get('/teachers', teachersListController.listAll)
+router.get('/teachers/:rm', teachersListByRmController.findByRm)
 router.get('/teachers/area/:area', teachersListByAreaController.findByArea)
 router.get('/teachers/discipline/:discipline', teachersListByDisciplineController.findByDiscipline)
 router.get('/teachers/accept-evaluate/:aceitaAvaliar', teachersListByAcceptEvaluate.findByAcceptEvaluate)
